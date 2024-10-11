@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="172*"/>
+            <ColumnDefinition Width="621*"/>
+        </Grid.ColumnDefinitions>
+        <Menu Name="mi_open" Background="White" BorderBrush="Navy" BorderThickness="1" Grid.ColumnSpan="2">
+            <MenuItem  Header="Смена Background" Click="MenuItem_Click"/>
+            <MenuItem Header="О разработчике" Click="MenuItem_Click_1"/>
+            <MenuItem Header="Закрыть окно" Click="MenuItem_Click_2"/>
+        </Menu>
     </Grid>
 </Window>

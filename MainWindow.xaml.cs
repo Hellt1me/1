@@ -24,5 +24,29 @@ namespace WpfApp1
         {
             InitializeComponent();
         }
+
+        private void MenuItem_Click(object sender, MouseEventArgs e)
+        {
+            if (e.Clicks == 1)
+            {
+                mi_open.Background = Brushes.Lavender;
+            } 
+            else if (e.Click == 2)
+            {
+                mi_open.Background = Brushes.White;
+            }
+        }
+
+
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }
